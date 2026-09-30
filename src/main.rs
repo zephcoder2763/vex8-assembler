@@ -29,14 +29,14 @@ fn main() {
                 "LOADM" => output.push(05),
                 "READM" => output.push(06),
                 "JMP" => output.push(07),
-                "R0" => output.push(01),
-                "R1" => output.push(02),
-                "R2" => output.push(03),
-                "R3" => output.push(04),
-                "R4" => output.push(05),
-                "R5" => output.push(06),
-                "R6" => output.push(07),
-                "R7" => output.push(08),
+                "R0" => output.push(00),
+                "R1" => output.push(01),
+                "R2" => output.push(02),
+                "R3" => output.push(03),
+                "R4" => output.push(04),
+                "R5" => output.push(05),
+                "R6" => output.push(06),
+                "R7" => output.push(07),
                 _ => return
             }
         }
