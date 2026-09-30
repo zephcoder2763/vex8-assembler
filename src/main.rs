@@ -1,5 +1,6 @@
 use std::io;
 use std::fs;
+use std::io::Write;
 
 fn main() {
     print!("Enter file to assemble.. ");
@@ -42,7 +43,16 @@ fn main() {
         }
     }
 
-    for number in output {
+    for number in &output {
         print!("{:02X} ", number);
     }
+
+    let file = fs::File::create("output.bin");
+    let mut result_file: fs::File = match file {
+        Ok(o) => o,
+        Err(err) => return
+    };
+
+    result_file.write_all(&output);
+    
 }
