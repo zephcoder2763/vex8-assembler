@@ -41,4 +41,8 @@ fn main() {
             }
         }
     }
+
+    for number in output {
+        print!("{:02X} ", number);
+    }
 }
