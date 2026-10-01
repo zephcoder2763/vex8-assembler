@@ -30,6 +30,8 @@ fn main() {
                 "LOADM" => output.push(05),
                 "READM" => output.push(06),
                 "JMP" => output.push(07),
+                "CMP" => output.push(08),
+                "JE" => output.push(09),
                 "R0" => output.push(00),
                 "R1" => output.push(01),
                 "R2" => output.push(02),
