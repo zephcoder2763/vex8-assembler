@@ -33,6 +33,7 @@ fn main() {
                 "jmp" => output.push(07),
                 "cmp" => output.push(08),
                 "je" => output.push(09),
+                "int" => output.push(10),
                 "r0" => output.push(00),
                 "r1" => output.push(01),
                 "r2" => output.push(02),
