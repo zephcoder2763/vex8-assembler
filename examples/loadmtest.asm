@@ -1,3 +1,3 @@
-LOAD R1 03 00
-LOADM R1 01 00
-READM R2 01 00
+load r1 03 00
+loadm r1 01 00
+readm r2 01 00

@@ -1,3 +1,3 @@
-load R0 0A 00
-load R1 0A 00
-add R2 R0 R1
+load r0 0A 00
+load r1 0A 00
+add r2 r0 r1

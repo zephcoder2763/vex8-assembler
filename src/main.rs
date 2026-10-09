@@ -10,7 +10,8 @@ fn main() {
     let trimmed_file_name: String = String::from(file_name.trim());
     let program= match fs::read_to_string(trimmed_file_name) {
         Ok(v) => {v},
-        Err(_e) => return,
+        Err(_e) => {println!("IATE TEH FILE");
+    return}
     };
 
     let tokens: Vec<String> = program.split_whitespace().map(String::from).collect();
