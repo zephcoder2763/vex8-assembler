@@ -34,6 +34,7 @@ fn main() {
                 "cmp" => output.push(0x08),
                 "je" => output.push(0x09),
                 "int" => output.push(0x0A),
+                "spi" => output.push(0x0B),
                 "r0" => output.push(0x00),
                 "r1" => output.push(0x01),
                 "r2" => output.push(0x02),
